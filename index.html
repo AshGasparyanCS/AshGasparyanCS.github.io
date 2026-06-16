@@ -21,7 +21,7 @@
   --border:     #232a33;
   --text:       #e6edf3;
   --muted:      #8b949e;
-  --up:         #4dd0a7;   /* "healthy" — the signature accent */
+  --up:         #ff8743;   /* "healthy" — the signature accent */
   --link:       #7aa2f7;   /* secondary accent / links          */
   --warn:       #f0b252;   /* tertiary highlight                */
   --maxw:       1080px;
@@ -50,8 +50,8 @@ a:hover{text-decoration:underline}
   text-transform:uppercase;color:var(--up);margin-bottom:14px;
 }
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--up);
-  box-shadow:0 0 0 0 rgba(77,208,167,.5);animation:pulse 2.4s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(77,208,167,.45)}70%{box-shadow:0 0 0 7px rgba(77,208,167,0)}100%{box-shadow:0 0 0 0 rgba(77,208,167,0)}}
+  box-shadow:0 0 0 0 rgba(255,135,67,.5);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,135,67,.45)}70%{box-shadow:0 0 0 7px rgba(255,135,67,0)}100%{box-shadow:0 0 0 0 rgba(255,135,67,0)}}
 
 /* ============================================================ NAVBAR */
 header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);
@@ -80,8 +80,8 @@ header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);
   font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:500;cursor:pointer;
   transition:transform .18s var(--ease),background .18s,border-color .18s}
 .btn:hover{text-decoration:none;transform:translateY(-2px)}
-.btn-primary{background:var(--up);color:#06241b;border:1px solid var(--up)}
-.btn-primary:hover{background:#62dbb6}
+.btn-primary{background:var(--up);color:#2b1400;border:1px solid var(--up)}
+.btn-primary:hover{background:#ff9d63}
 .btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
 .btn-ghost:hover{border-color:var(--up)}
 
@@ -120,7 +120,7 @@ section{padding:80px 0;border-top:1px solid var(--border)}
 .card h3{font-size:1.15rem}
 .badge{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.06em;
   text-transform:uppercase;padding:4px 9px;border-radius:999px;border:1px solid}
-.badge.live{color:var(--up);border-color:rgba(77,208,167,.35);background:rgba(77,208,167,.08)}
+.badge.live{color:var(--up);border-color:rgba(255,135,67,.35);background:rgba(255,135,67,.08)}
 .badge.wip{color:var(--warn);border-color:rgba(240,178,82,.35);background:rgba(240,178,82,.08)}
 .card p{color:#c5ccd6;font-size:.93rem;margin:0 0 18px;flex:1}
 .card .tags{margin-bottom:18px}
